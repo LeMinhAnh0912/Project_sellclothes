@@ -1,0 +1,120 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Sản phẩm 1",
+      "price": 100000,
+      "description": "Mô tả sản phẩm 1",
+      "image": "./img.project/Converse.1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Sản phẩm 2",
+      "price": 200000,
+      "description": "Mô tả sản phẩm 2",
+      "image": "./img.project/Converse.2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Sản phẩm 3",
+      "price": 300000,
+      "description": "Mô tả sản phẩm 3",
+      "image": "./img.project/Converse.3.jpg"
+    },
+
+    {
+      "id": 4,
+      "name": "Sản phẩm 1",
+      "price": 100000,
+      "description": "Mô tả sản phẩm 1",
+      "image": "./img.project/Converse.4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Sản phẩm 2",
+      "price": 200000,
+      "description": "Mô tả sản phẩm 2",
+      "image": "./img.project/Converse.5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Sản phẩm 3",
+      "price": 300000,
+      "description": "Mô tả sản phẩm 3",
+      "image": "./img.project/Converse.6.jpg"
+    },
+
+    {
+      "id": 1,
+      "name": "Sản phẩm 1",
+      "price": 100000,
+      "description": "Mô tả sản phẩm 1",
+      "image": "./img.project/Converse.1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Sản phẩm 2",
+      "price": 200000,
+      "description": "Mô tả sản phẩm 2",
+      "image": "./img.project/Converse.2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Sản phẩm 3",
+      "price": 300000,
+      "description": "Mô tả sản phẩm 3",
+      "image": "./img.project/Converse.3.jpg"
+    },
+
+    {
+      "id": 1,
+      "name": "Sản phẩm 1",
+      "price": 100000,
+      "description": "Mô tả sản phẩm 1",
+      "image": "./img.project/Converse.1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Sản phẩm 2",
+      "price": 200000,
+      "description": "Mô tả sản phẩm 2",
+      "image": "./img.project/Converse.2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Sản phẩm 3",
+      "price": 300000,
+      "description": "Mô tả sản phẩm 3",
+      "image": "./img.project/Converse.3.jpg"
+    },
+
+    {
+      "id": 1,
+      "name": "Sản phẩm 1",
+      "price": 100000,
+      "description": "Mô tả sản phẩm 1",
+      "image": "./img.project/Converse.1.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Sản phẩm 1",
+      "price": 100000,
+      "description": "Mô tả sản phẩm 1",
+      "image": "./img.project/Converse.1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Sản phẩm 2",
+      "price": 200000,
+      "description": "Mô tả sản phẩm 2",
+      "image": "./img.project/Converse.2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Sản phẩm 3",
+      "price": 300000,
+      "description": "Mô tả sản phẩm 3",
+      "image": "./img.project/Converse.3.jpg"
+    }
+  ]
+}
