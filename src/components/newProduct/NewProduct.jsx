@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
+
 const newProduct = () => {
   const [newProducts, setNewProducts] = useState([]);
 
@@ -26,7 +28,9 @@ const newProduct = () => {
           <h3>{newProduct.name}</h3>
           <p>Price: {newProduct.price}</p>
           <p>Description: {newProduct.description}</p>
-          <button>BUY NOW !!!!</button>
+          <Link to={`/detail/${newProduct.id}`}>
+            <button>BUY NOW !!!!</button>
+          </Link>
         </div>
       ))}
     </div>

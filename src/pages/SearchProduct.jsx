@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./SearchProduct.css";
+import { Link } from "react-router-dom";
 
 export default function SearchProduct() {
   const [items, setItems] = useState([]);
@@ -46,7 +47,9 @@ export default function SearchProduct() {
               <h3>{item.name}</h3>
               <p>price: {item.price} </p>
               <p>{item.description}</p>
-              <button>BUY NOW !!!!</button>
+              <Link to={`/detail/${item.id}`}>
+                <button>BUY NOW !!!!</button>
+              </Link>
             </div>
           ))
         ) : (
