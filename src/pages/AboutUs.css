@@ -1,0 +1,55 @@
+/* AboutUs.css */
+
+.about-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about{border-radius: 8px;
+    padding: 20px;
+    border: 1px solid black;
+ margin-left: 550px;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+.about-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.about-info svg {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.info-text {
+  font-size: 18px;
+}
+
+.info-text,
+.facebook-link {
+  color: #555;
+}
+
+.facebook-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1877f2; /* Màu của biểu tượng Facebook */
+}
+
+.facebook-link:hover {
+  color: #ff0400; /* Màu khi di chuột vào liên kết */
+}
+
+.about-info p:last-child {
+  margin-bottom: 0;
+}
+.img-meo{
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 385px;
+}

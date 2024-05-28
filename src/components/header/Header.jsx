@@ -24,7 +24,11 @@ export default function Header() {
               Product
             </Link>
           </div>
-          <div>Contact us</div>
+          <div>
+            <Link className="home" to="/about">
+              About us
+            </Link>
+          </div>
         </div>
         <div className="header-icon">
           <div>
@@ -33,10 +37,9 @@ export default function Header() {
             </Link>
           </div>
           <div>
-            <FavoriteBorderIcon />
-          </div>
-          <div>
-            <AddShoppingCartIcon />
+            <Link to="/shopping">
+              <AddShoppingCartIcon />
+            </Link>
           </div>
           <div>
             <Link to="/login" className="user-icon">

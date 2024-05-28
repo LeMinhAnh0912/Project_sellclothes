@@ -32,27 +32,27 @@ export default function Detail() {
   }
 
   return (
-    <div class="product-card">
+    <div className="product-card">
       <img src={item.image} alt={item.name} />
-      <div class="product-details">
+      <div className="product-details">
         <h1>{item.name}</h1>
         <p>Price: {item.price}</p>
-        <p>{item.description}</p>
-        <div class="quantity-controls">
+        <p>Description: {item.description}</p>
+        <div className="quantity-controls">
           <button className="decrease">-</button>
           <span>1</span>
           <button className="increase">+</button>
         </div>
-        <button class="add-to-cart-btn">Add to cart</button>
-        <p class="quality-assurance">
+        <button className="add-to-cart-btn">Add to cart</button>
+        <p className="quality-assurance">
           <CheckCircleIcon style={{ color: "green" }} />
           Sản phẩm chất lượng - uy tín
         </p>
-        <p class="delivery-info">
+        <p className="delivery-info">
           <AccessAlarmIcon />
           Giao hàng nhanh Từ 2 - 5 ngày
         </p>
-        <p class="support-info">
+        <p className="support-info">
           <SupportAgentIcon /> Hotline hỗ trợ : 0794715940
         </p>
       </div>
