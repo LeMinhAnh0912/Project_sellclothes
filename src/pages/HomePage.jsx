@@ -5,10 +5,10 @@ import StarIcon from "@mui/icons-material/Star";
 export default function HomePage() {
   return (
     <div>
-      <h1 className="homePage">Trang Chủ</h1>
-      <h2 className="h2-product">Sản phẩm nổi bật:</h2>
+      <h1 className="homePage">Home</h1>
+      <h2 className="h2-product">Outstanding product:</h2>
       <ListProduct />
-      <h2 className="h2-feedback"> Review About Sansa</h2>
+      <h2 className="h2-feedback"> Review About Sansa:</h2>
       <div className="feedback">
         <div className="info-feedback">
           <div className="img-name">
