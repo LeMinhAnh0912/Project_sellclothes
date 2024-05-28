@@ -5,9 +5,12 @@ import Register from "../register/Register";
 import HomePage from "../../pages/HomePage";
 import ProductPage from "../../pages/ProductPage";
 import SearchProduct from "../../pages/SearchProduct";
-export default function index() {
+import Detail from "../detail/Detail";
+
+export default function Index() {
   return (
     <Routes>
+      <Route path="/detail/:id" element={<Detail />} />
       <Route path="/search" element={<SearchProduct />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
