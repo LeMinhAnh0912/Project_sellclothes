@@ -6,12 +6,16 @@ import HomePage from "../../pages/HomePage";
 import ProductPage from "../../pages/ProductPage";
 import SearchProduct from "../../pages/SearchProduct";
 import Detail from "../detail/Detail";
+import ShoppingCart from "../../pages/ShoppingCart";
+import AboutUs from "../../pages/AboutUs";
 
 export default function Index() {
   return (
     <Routes>
       <Route path="/detail/:id" element={<Detail />} />
       <Route path="/search" element={<SearchProduct />} />
+      <Route path="/about" element={<AboutUs />} />
+      <Route path="/shopping" element={<ShoppingCart />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/" element={<HomePage />} />
