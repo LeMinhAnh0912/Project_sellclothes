@@ -284,5 +284,287 @@
       "image": "https://i.pinimg.com/736x/94/9f/4d/949f4da22df0e2cc12143f5cb86e2660.jpg",
       "description": "Váy đầm dạ hội nữ, chất liệu vải cao cấp, thiết kế sang trọng, phù hợp cho sự kiện quan trọng."
     }
+  ],
+  "items": [
+    {
+      "id": 17,
+      "name": "Áo Vest Nam",
+      "price": 850000,
+      "image": "https://th.bing.com/th/id/OIP.cXUu4LNDFkz9aBCsdYaSdAHaLG?rs=1&pid=ImgDetMainm",
+      "description": "Áo vest nam, chất liệu vải cao cấp, thiết kế sang trọng, phù hợp cho sự kiện quan trọng."
+    },
+    {
+      "id": 18,
+      "name": "Chân Váy Ngắn Nữ",
+      "price": 260000,
+      "image": "https://dony.vn/wp-content/uploads/2021/08/chan-vay-ngan-nu-1.jpg",
+      "description": "Chân váy ngắn nữ, chất liệu vải thoáng mát, thiết kế trẻ trung, năng động."
+    },
+    {
+      "id": 19,
+      "name": "Áo Hoodie Nam",
+      "price": 350000,
+      "image": "https://dony.vn/wp-content/uploads/2022/01/ao-hoodie-nam-4.jpg",
+      "description": "Áo hoodie nam, chất liệu vải nỉ ấm áp, thiết kế thời trang, nhiều màu sắc."
+    },
+    {
+      "id": 20,
+      "name": "Quần Jogger Nam",
+      "price": 300000,
+      "image": "https://247store.vn/uploads/products/20201108/z21662056125675a1c3c50c7cfaabbc9d9476a8f8ae509.jpg",
+      "description": "Quần jogger nam, chất liệu vải co giãn, thoải mái, phù hợp cho hoạt động thể thao."
+    },
+    {
+      "id": 21,
+      "name": "Áo Khoác Gió Nữ",
+      "price": 420000,
+      "image": "https://mayphuongthao.com/wp-content/uploads/2018/01/ao_khoac_du_nu_form_rong_ca_tinh1.jpg",
+      "description": "Áo khoác gió nữ, chất liệu chống gió, chống nước, thiết kế nhẹ nhàng, thoải mái."
+    },
+    {
+      "id": 22,
+      "name": "Quần Tây Nữ",
+      "price": 320000,
+      "image": "https://th.bing.com/th/id/R.4a7cc92df3b15836e04d8b0150cd5442?rik=NrtXa%2fOrLE871g&pid=ImgRaw&r=0",
+      "description": "Quần tây nữ, chất liệu vải cao cấp, thiết kế ôm sát, thích hợp cho môi trường công sở."
+    },
+    {
+      "id": 23,
+      "name": "Áo Thun Tay Ngắn Nam",
+      "price": 210000,
+      "image": "https://www.akmen.vn/images/thumbs/2020/11/ao-thun-tron-oversize-co-tui-at027-mau-trang-kem-15663-slide-products-5f9f71feb4888.png",
+      "description": "Áo thun tay ngắn nam, chất liệu cotton 100%, thoáng mát, nhiều màu sắc."
+    },
+    {
+      "id": 24,
+      "name": "Váy Đầm Dạ Hội Nữ",
+      "price": 900000,
+      "image": "https://i.pinimg.com/736x/94/9f/4d/949f4da22df0e2cc12143f5cb86e2660.jpg",
+      "description": "Váy đầm dạ hội nữ, chất liệu vải cao cấp, thiết kế sang trọng, phù hợp cho sự kiện quan trọng."
+    },
+    {
+      "id": 25,
+      "name": "Áo Khoác Len Nữ",
+      "price": 480000,
+      "image": "https://cbu01.alicdn.com/img/ibank/O1CN01JP6UrS1TY2VLtLkep_!!2016302393-0-cib.jpg",
+      "description": "Áo khoác len nữ, chất liệu len ấm áp, thiết kế thời trang, nhiều màu sắc."
+    },
+    {
+      "id": 26,
+      "name": "Quần Jogger Nữ",
+      "price": 290000,
+      "image": "https://bumshop.com.vn/wp-content/uploads/2018/08/cach-phoi-do-voi-quan-jogger-nu-22.jpeg",
+      "description": "Quần jogger nữ, chất liệu vải co giãn, thoải mái, phù hợp cho hoạt động thể thao."
+    },
+    {
+      "id": 27,
+      "name": "Áo Thun Cổ Tròn Nam",
+      "price": 200000,
+      "image": "https://aoxuanhe.com/upload/product/axh-127/ao-thun-nam-co-tron-tay-lo-xanh.jpg",
+      "description": "Áo thun cổ tròn nam, chất liệu cotton 100%, thoáng mát, nhiều màu sắc."
+    },
+    {
+      "id": 28,
+      "name": "Váy Maxi Nữ",
+      "price": 350000,
+      "image": "https://th.bing.com/th/id/R.c5f9686f8bd3e3f771d92c379368f243?rik=BwdhomLoAVi%2fPQ&pid=ImgRaw&r=0",
+      "description": "Váy maxi nữ, chất liệu vải nhẹ nhàng, thiết kế thoáng mát, phù hợp cho mùa hè."
+    },
+    {
+      "id": 29,
+      "name": "Áo Len Cổ Lọ Nam",
+      "price": 400000,
+      "image": "https://th.bing.com/th/id/R.568c5e446f45191343cfea8f656544bb?rik=dt93I50tBz%2bo2g&pid=ImgRaw&r=0",
+      "description": "Áo len cổ lọ nam, chất liệu len cao cấp, thiết kế ấm áp, phù hợp cho mùa đông."
+    },
+    {
+      "id": 30,
+      "name": "Quần Short Nữ",
+      "price": 220000,
+      "image": "https://lury.vn/uploads/TQ1162-quan-short-jean-xan-gau-0.jpg",
+      "description": "Quần short nữ, chất liệu vải kaki, thoáng mát, thiết kế trẻ trung, năng động."
+    },
+    {
+      "id": 31,
+      "name": "Áo Dài Truyền Thống Nữ",
+      "price": 700000,
+      "image": "https://th.bing.com/th/id/OIP.oCBAQ529tFgK_sQ9ubZ6gwHaLH?rs=1&pid=ImgDetMain",
+      "description": "Áo dài truyền thống nữ, chất liệu lụa mềm mại, thiết kế thanh lịch và tinh tế."
+    },
+    {
+      "id": 32,
+      "name": "Áo Thun Có Cổ Nữ",
+      "price": 250000,
+      "image": "https://dony.vn/wp-content/uploads/2021/08/ao-thun-nu-co-tron-form-rong-1.jpg",
+      "description": "Áo thun có cổ nữ, chất liệu cotton co giãn, thoáng mát, thích hợp cho cả ngày đi học và làm việc."
+    },
+    {
+      "id": 33,
+      "name": "Quần Thể Thao Nam",
+      "price": 270000,
+      "image": "https://th.bing.com/th/id/OIP.APM0nPf5yJa5lvYdgk9MbwHaEo?rs=1&pid=ImgDetMain",
+      "description": "Quần thể thao nam, chất liệu vải co giãn tốt, thoáng mát, thích hợp cho mọi hoạt động thể thao."
+    },
+    {
+      "id": 34,
+      "name": "Áo Khoác Gió Nam",
+      "price": 450000,
+      "image": "https://aothudong.com/upload/product/atd-206/ao-khoac-gio-nam-dep-cao-cap.jpg",
+      "description": "Áo khoác gió nam, chất liệu chống gió, chống nước, thiết kế thời trang."
+    },
+    {
+      "id": 35,
+      "name": "Váy Công Chúa Bé Gái",
+      "price": 300000,
+      "image": "https://tuyensi.vn/wp-content/uploads/2021/06/dam-cong-chua-cho-be.jpg",
+      "description": "Váy công chúa bé gái, chất liệu vải mềm mại, thiết kế dễ thương, thích hợp cho các bé từ 3-7 tuổi."
+    },
+    {
+      "id": 36,
+      "name": "Quần Thun Nam",
+      "price": 250000,
+      "image": "https://th.bing.com/th/id/OIP.dhIZliTi6VP1yog2Uc8szQHaHa?rs=1&pid=ImgDetMain",
+      "description": "Quần thun nam, chất liệu vải co giãn, thoải mái cho các hoạt động thường ngày."
+    },
+    {
+      "id": 37,
+      "name": "Áo Khoác Denim Nam",
+      "price": 550000,
+      "image": "https://th.bing.com/th/id/R.3dfa620e3a36f89f2bbcc606e6cfc1c4?rik=5Wd39VEncOhjNA&pid=ImgRaw&r=0",
+      "description": "Áo khoác denim nam, chất liệu jean bền đẹp, thiết kế trẻ trung, phong cách."
+    },
+    {
+      "id": 38,
+      "name": "Váy Ngắn Denim Nữ",
+      "price": 320000,
+      "image": "https://th.bing.com/th/id/R.ea9160baec0b377fbac6f478df41edf8?rik=o7QnDRTgMdxPcA&pid=ImgRaw&r=0",
+      "description": "Váy ngắn denim nữ, chất liệu jean thoáng mát, thiết kế cá tính, trẻ trung."
+    },
+    {
+      "id": 39,
+      "name": "Áo Thun Tay Lỡ Nam",
+      "price": 210000,
+      "image": "https://down-vn.img.susercontent.com/file/3f7fbc266959a8c2bb4c056073555957",
+      "description": "Áo thun tay lỡ nam, chất liệu cotton co giãn, thoáng mát, phù hợp cho mùa hè."
+    },
+    {
+      "id": 40,
+      "name": "Quần Jean Skinny Nữ",
+      "price": 370000,
+      "image": "https://kenh14cdn.com/2020/6/1/hyeli905110872185132894638873519711447101617687n-1591025618770700129980.jpg",
+      "description": "Quần jean skinny nữ, chất liệu jean cao cấp, form ôm sát, thiết kế thời trang."
+    },
+    {
+      "id": 1,
+      "name": "Áo Thun Trơn Nam",
+      "price": 200000,
+      "image": "https://www.akmen.vn/images/thumbs/2020/11/ao-thun-tron-oversize-co-tui-at027-mau-trang-kem-15663-slide-products-5f9f71ff43c7b.png",
+      "description": "Áo thun trơn nam, chất liệu cotton 100%, thoáng mát, co giãn tốt, nhiều màu sắc lựa chọn."
+    },
+    {
+      "id": 2,
+      "name": "Quần Jean Nữ Rách Gối",
+      "price": 350000,
+      "image": "https://dep.com.vn/wp-content/uploads/2021/04/so-mi-quan-jeans-phu-song-street-style-sao-Viet-DepOnline-01.jpg",
+      "description": "Quần jean nữ rách gối thời trang, chất liệu jean cao cấp, form ôm vừa vặn, phong cách cá tính."
+    },
+    {
+      "id": 3,
+      "name": "Áo Khoác Dù Nam",
+      "price": 400000,
+      "image": "https://th.bing.com/th/id/OIP.qImkqZt0GuCPz3AkTyrcJgHaHa?rs=1&pid=ImgDetMain",
+      "description": "Áo khoác dù nam chống gió, chống nước, thiết kế trẻ trung, có mũ, nhiều màu sắc."
+    },
+    {
+      "id": 4,
+      "name": "Váy Xòe Nữ",
+      "price": 300000,
+      "image": "https://th.bing.com/th/id/OIP.JPhEdCDnRJAsaeWJtRxA9AHaKI?rs=1&pid=ImgDetMain",
+      "description": "Váy xòe nữ dễ thương, chất liệu vải voan nhẹ nhàng, thoáng mát, phù hợp cho mùa hè."
+    },
+    {
+      "id": 5,
+      "name": "Áo Sơ Mi Nam",
+      "price": 250000,
+      "image": "https://th.bing.com/th/id/OIP.SLDZvFOhfVypQH9eHqbRawHaJQ?rs=1&pid=ImgDetMain",
+      "description": "Áo sơ mi nam, chất liệu cotton mềm mại, thấm hút mồ hôi tốt, nhiều màu sắc và kiểu dáng."
+    },
+    {
+      "id": 6,
+      "name": "Quần Short Nam",
+      "price": 220000,
+      "image": "https://th.bing.com/th/id/R.b85ae4df1b5f67be38be3b7c187369f7?rik=ObZJ1q33jSNtGQ&pid=ImgRaw&r=0",
+      "description": "Quần short nam, chất liệu vải kaki, thoáng mát, thiết kế đơn giản, nhiều kích cỡ."
+    },
+    {
+      "id": 7,
+      "name": "Áo Thun Nữ In Hình",
+      "price": 180000,
+      "image": "https://cdn.gumac.vn/image/01/onpage/bai-38/ao-thun-nu-phoi-2-mau270320191046035408.jpg",
+      "description": "Áo thun nữ in hình dễ thương, chất liệu cotton co giãn, thoáng mát, phù hợp cho mùa hè."
+    },
+    {
+      "id": 8,
+      "name": "Chân Váy Dài",
+      "price": 280000,
+      "image": "https://th.bing.com/th/id/R.be1c9be10e915b186a6904408cb80f78?rik=WhY%2b34CZ%2b1gZdw&pid=ImgRaw&r=0",
+      "description": "Chân váy dài nữ, chất liệu vải mềm mại, thoáng mát, thiết kế thanh lịch."
+    },
+    {
+      "id": 9,
+      "name": "Áo Khoác Jean Nữ",
+      "price": 450000,
+      "image": "https://th.bing.com/th/id/OIP.t3ONthtnCVikOxQ8Gvso_gHaHa?rs=1&pid=ImgDetMain",
+      "description": "Áo khoác jean nữ, chất liệu jean bền đẹp, thiết kế cá tính, thời trang."
+    },
+    {
+      "id": 10,
+      "name": "Quần Tây Nam",
+      "price": 320000,
+      "image": "https://mcdn.coolmate.me/image/August2021/quan-tay-nam-4.jpg",
+      "description": "Quần tây nam, chất liệu vải cao cấp, form dáng chuẩn, thích hợp cho công sở."
+    },
+    {
+      "id": 11,
+      "name": "Áo Thun Polo Nam",
+      "price": 270000,
+      "image": "https://dongphucvang.vn/wp-content/uploads/2020/08/Ao-Thun-Poly-Nam-3.png",
+      "description": "Áo thun polo nam, chất liệu cotton co giãn tốt, thiết kế thanh lịch, nhiều màu sắc."
+    },
+    {
+      "id": 12,
+      "name": "Quần Legging Nữ",
+      "price": 190000,
+      "image": "https://th.bing.com/th/id/OIP.HWk3iA87llCsRwFQleve0wAAAA?rs=1&pid=ImgDetMain",
+      "description": "Quần legging nữ, chất liệu co giãn, ôm sát cơ thể, thoải mái cho hoạt động hàng ngày."
+    },
+    {
+      "id": 13,
+      "name": "Áo Khoác Da Nam",
+      "price": 600000,
+      "image": "https://th.bing.com/th/id/OIP.IJ8a__hXPjvC8KYsKnhF-AHaHa?rs=1&pid=ImgDetMain",
+      "description": "Áo khoác da nam, chất liệu da thật, thiết kế thời trang, bền bỉ theo thời gian."
+    },
+    {
+      "id": 14,
+      "name": "Váy Công Sở Nữ",
+      "price": 380000,
+      "image": "https://th.bing.com/th/id/R.0e6a1591521bdbe23d32fdbb16a270e5?rik=E06spvchV2Ta6g&pid=ImgRaw&r=0",
+      "description": "Váy công sở nữ, chất liệu vải cao cấp, thiết kế thanh lịch, phù hợp cho môi trường công sở."
+    },
+    {
+      "id": 15,
+      "name": "Áo Thun Tay Dài Nam",
+      "price": 230000,
+      "image": "https://th.bing.com/th/id/R.afa11d87ec65f9b560ee7baba69bdf28?rik=sFBQQrLgKSpV6g&pid=ImgRaw&r=0",
+      "description": "Áo thun tay dài nam, chất liệu cotton 100%, thoáng mát, co giãn tốt, nhiều màu sắc."
+    },
+    {
+      "id": 16,
+      "name": "Quần Jean Nam",
+      "price": 400000,
+      "image": "https://foxseventy.vn/wp-content/uploads/2021/04/quan-jean-nam-mau-xam.jpg",
+      "description": "Quần jean nam, chất liệu jean cao cấp, thiết kế đơn giản, bền bỉ, thoải mái."
+    }
   ]
 }

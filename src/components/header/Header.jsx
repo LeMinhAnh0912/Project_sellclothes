@@ -28,7 +28,9 @@ export default function Header() {
         </div>
         <div className="header-icon">
           <div>
-            <SearchIcon />
+            <Link to="/search">
+              <SearchIcon />
+            </Link>
           </div>
           <div>
             <FavoriteBorderIcon />
