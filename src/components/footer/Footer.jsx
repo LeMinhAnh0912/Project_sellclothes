@@ -40,7 +40,10 @@ const Footer = () => {
       </div>
 
       <div className="footer-p">
-        <h2>Terms and Conditions</h2>
+        <h2>Company Information</h2>
+        <p>Introducing Sansa</p>
+        <p>Fashion Blogger</p>
+        <p>Job</p>
       </div>
     </footer>
   );

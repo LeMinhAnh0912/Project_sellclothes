@@ -2,7 +2,6 @@ import React from "react";
 import "./Header.css";
 
 import SearchIcon from "@mui/icons-material/Search";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { Link } from "react-router-dom";
@@ -32,12 +31,12 @@ export default function Header() {
         </div>
         <div className="header-icon">
           <div>
-            <Link to="/search">
+            <Link to="/search" className="user-icon">
               <SearchIcon />
             </Link>
           </div>
           <div>
-            <Link to="/shopping">
+            <Link to="/shopping" className="user-icon">
               <AddShoppingCartIcon />
             </Link>
           </div>
