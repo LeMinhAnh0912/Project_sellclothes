@@ -701,6 +701,20 @@
       "username": "Quang",
       "confirmPassword": "11111111",
       "id": 3
+    },
+    {
+      "email": "fff@gmail.com",
+      "password": "$2a$10$a4nEzxHdyW1xOIJd/4DnvuYNy6cQR8tDqAmtq9pFVSXKvW7J1XsIG",
+      "username": "Quang",
+      "confirmPassword": "11111111",
+      "id": 4
+    },
+    {
+      "email": "Thanhquang1810@gmail.com",
+      "password": "$2a$10$ml5SC/KGmL4hUrNS.Jn32.nC7O0FkkEKhgXztoirlc.MGk.tYTnr6",
+      "username": "HCM_JV240304_ANHLM",
+      "confirmPassword": "11111111",
+      "id": 5
     }
   ]
 }

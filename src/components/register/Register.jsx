@@ -49,7 +49,7 @@ export default function Register() {
         const { data } = await authApi.userRegister(values);
         localStorage.setItem("TOKEN", data.accessToken);
         localStorage.setItem("USER", data.user.email);
-        navigate("/");
+        navigate("/login");
       } catch (error) {
         console.error("There was an error registering!", error);
         setErrors(error.response.data || "Đăng ký thất bại. Vui lòng thử lại.");
