@@ -8,7 +8,7 @@
 .shopping-cart h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #4caf50;
+  color: #0059ff;
 }
 
 table {
@@ -21,13 +21,13 @@ thead th {
   background-color: #f2f2f2;
   padding: 10px;
   border: 1px solid #ddd;
-  text-align: left;
+  text-align: center;
 }
 
 tbody td {
   padding: 10px;
   border: 1px solid #ddd;
-  text-align: left;
+  text-align: center;
 }
 
 .quantity-btn {
@@ -41,14 +41,60 @@ tbody td {
 }
 
 .quantity-btn:hover {
-  background-color: #45a049;
+  background-color: #015306;
 }
 
 .quantity {
+  font-weight: 700;
   margin: 0 10px;
   display: inline-block;
 }
 
 tbody tr:nth-child(even) {
   background-color: #f9f9f9;
+}
+
+.cart-total {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.cart-total h3 {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.cart-total span {
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.buy-now-btn {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+  background-color: #008cff;
+}
+.remove-btn {
+  background-color: #fff200;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.remove-btn:hover {
+  background-color: #ff0000;
 }

@@ -18,19 +18,25 @@ export default function ShoppingCart() {
         <tbody>
           <tr>
             <td>Product 1</td>
-            <td>Product 1 Name</td>
+            <td>Product Name</td>
             <td>$100</td>
             <td>
               <button className="quantity-btn">-</button>
               <span className="quantity">1</span>
               <button className="quantity-btn">+</button>
+              <button className="remove-btn">Delete</button>
             </td>
             <td>$200</td>
           </tr>
           {/* Add more rows as needed */}
         </tbody>
       </table>
-      <button>BUY NOW !!!!</button>
+      <div className="cart-total">
+        <h3>
+          TOTAL: <span>$200</span>
+        </h3>
+        <button className="buy-now-btn">BUY NOW !!!!</button>
+      </div>
     </div>
   );
 }

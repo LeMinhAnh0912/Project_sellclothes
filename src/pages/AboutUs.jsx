@@ -8,7 +8,7 @@ import "./AboutUs.css";
 export default function AboutUs() {
   return (
     <>
-      <h1 className="about-title">AboutUs</h1>
+      <h1 className="about-title">Contact Us</h1>
       <div className="about">
         <p className="about-info">
           <LocationOnIcon />

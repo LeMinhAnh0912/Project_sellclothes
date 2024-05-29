@@ -8,15 +8,17 @@ import SearchProduct from "../../pages/SearchProduct";
 import Detail from "../detail/Detail";
 import ShoppingCart from "../../pages/ShoppingCart";
 import AboutUs from "../../pages/AboutUs";
+import SignOut from "../signout/SignOut";
 
 export default function Index() {
   return (
     <Routes>
       <Route path="/detail/:id" element={<Detail />} />
       <Route path="/search" element={<SearchProduct />} />
-      <Route path="/about" element={<AboutUs />} />
+      <Route path="/contact" element={<AboutUs />} />
       <Route path="/shopping" element={<ShoppingCart />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/signout" element={<SignOut />} />
       <Route path="/register" element={<Register />} />
       <Route path="/" element={<HomePage />} />
       <Route path="/productPage" element={<ProductPage />} />

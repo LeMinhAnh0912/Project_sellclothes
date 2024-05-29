@@ -1,16 +1,29 @@
 import React from "react";
 import "./Header.css";
-
 import SearchIcon from "@mui/icons-material/Search";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import LogoutIcon from "@mui/icons-material/Logout";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { logout } from "../../redux/slices/authReducer";
+
 export default function Header() {
+  const isLogin = useSelector((state) => state.auth.isLogin);
+  const dispatch = useDispatch();
+
+  const handleSignout = () => {
+    localStorage.removeItem("USER");
+    localStorage.removeItem("TOKEN");
+    // Dispatch action logout
+    dispatch(logout());
+  };
+
   return (
     <div>
       <div className="container">
         <div>
-          <img className="vps" src="img.project\Sansa.png" alt="" />
+          <img className="vps" src="img.project/Sansa.png" alt="" />
         </div>
         <div className="menu">
           <div>
@@ -24,8 +37,8 @@ export default function Header() {
             </Link>
           </div>
           <div>
-            <Link className="home" to="/about">
-              About us
+            <Link className="home" to="/contact">
+              Contact us
             </Link>
           </div>
         </div>
@@ -40,12 +53,21 @@ export default function Header() {
               <AddShoppingCartIcon />
             </Link>
           </div>
-          <div>
-            <Link to="/login" className="user-icon">
-              <AccountCircleIcon />
-            </Link>
-          </div>
-          <div id="current-email"></div>
+          {/* Nếu đã đăng nhập, hiển thị icon Logout */}
+          {isLogin && (
+            <div className="log-out-icon" onClick={handleSignout}>
+              <LogoutIcon />
+              <span>{localStorage.getItem("USER")}</span>
+            </div>
+          )}
+          {/* Nếu chưa đăng nhập, hiển thị icon User */}
+          {!isLogin && (
+            <div>
+              <Link to="/login" className="user-icon">
+                <AccountCircleIcon />
+              </Link>
+            </div>
+          )}
         </div>
       </div>
     </div>
