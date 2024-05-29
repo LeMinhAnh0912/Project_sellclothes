@@ -31,7 +31,7 @@ tbody td {
 }
 
 .quantity-btn {
-  background-color: #4caf50;
+  background-color: #4CAF50;
   color: white;
   border: none;
   padding: 5px 10px;
@@ -43,6 +43,7 @@ tbody td {
 .quantity-btn:hover {
   background-color: #015306;
 }
+
 
 .quantity {
   font-weight: 700;
@@ -73,6 +74,11 @@ tbody tr:nth-child(even) {
 
 .buy-now-btn {
   background-color: #ff5722;
+  color: #4CAF50;
+}
+
+.buy-now-btn {
+  background-color: #FF5722;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -85,7 +91,8 @@ tbody tr:nth-child(even) {
 .buy-now-btn:hover {
   background-color: #008cff;
 }
-.remove-btn {
+
+.remove-btn{
   background-color: #fff200;
   color: white;
   border: none;
@@ -98,3 +105,6 @@ tbody tr:nth-child(even) {
 .remove-btn:hover {
   background-color: #ff0000;
 }
+
+
+

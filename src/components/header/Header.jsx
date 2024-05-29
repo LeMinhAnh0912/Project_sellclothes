@@ -4,6 +4,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LogoutIcon from "@mui/icons-material/Logout";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../redux/slices/authReducer";
@@ -19,6 +20,11 @@ export default function Header() {
     dispatch(logout());
   };
 
+  const dispatch = useDispatch();
+  const cartItems = useSelector((state) => state.cart.items);
+  const totalQuantity = cartItems.reduce((acc, currentValue) => {
+    return acc + currentValue.quantity;
+  }, 0);
   return (
     <div>
       <div className="container">
@@ -50,7 +56,9 @@ export default function Header() {
           </div>
           <div>
             <Link to="/shopping" className="user-icon">
+              {" "}
               <AddShoppingCartIcon />
+              {totalQuantity}
             </Link>
           </div>
           {/* Nếu đã đăng nhập, hiển thị icon Logout */}
