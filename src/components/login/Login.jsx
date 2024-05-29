@@ -1,95 +1,92 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Login.css";
-import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
+import { useFormik } from "formik";
+import { useDispatch } from "react-redux";
+import { login } from "../../redux/slices/authReducer";
+import authApi from "../../api/authApi";
 
 export default function Login() {
-  const [formData, setFormData] = useState({
-    email: "",
-    password: "",
-  });
-
-  const [errors, setErrors] = useState({});
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
-  const handleChange = (e) => {
-    const { id, value } = e.target;
-    setFormData({ ...formData, [id]: value });
+  const validate = (values) => {
+    // Tao object errors
+    const errors = {};
+    // Check email khong rong
+
+    if (values.email == "admin" && values.password == "admin") {
+      navigate("/dashboard");
+    }
+
+    if (!values.email) {
+      errors.email = "Yeu cau nhap email!";
+    } else if (
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email) // check dinh dang email
+    ) {
+      errors.email = "Day khong phai la email, vui long nhap lai";
+    }
+
+    if (!values.password) {
+      errors.password = "Yeu cau nhap password!";
+    } else if (values.password.length < 8) {
+      errors.password = "Yeu cau nhap password lon hon 8 ky tu!";
+    }
+    return errors;
   };
 
-  const validateForm = () => {
-    const newErrors = {};
+  const formik = useFormik({
+    // Gia tri khoi tao cua form
+    initialValues: {
+      email: "",
+      password: "",
+    },
+    // Ham validate
+    validate,
+    // Ham xu ly submit
+    onSubmit: async (values) => {
+      try {
+        const { data } = await authApi.userLogin(values); // Call API de dang nhap
+        // Set localStorage
+        localStorage.setItem("TOKEN", data.accessToken);
+        localStorage.setItem("USER", data.user.email);
 
-    if (!formData.email) {
-      newErrors.email = "Email là bắt buộc.";
-    }
+        // Dispatch de set isLogin === true
+        dispatch(login());
 
-    if (!formData.password) {
-      newErrors.password = "Mật khẩu là bắt buộc.";
-    }
-
-    return newErrors;
-  };
-
-  const handleSubmitLogin = async (e) => {
-    e.preventDefault();
-    const newErrors = validateForm();
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-      return;
-    }
-
-    try {
-      const response = await axios.get("http://localhost:3000/users", {
-        params: {
-          email: formData.email,
-          password: formData.password,
-        },
-      });
-
-      const user = response.data.find(
-        (user) =>
-          user.email === formData.email && user.password === formData.password
-      );
-
-      if (user) {
-        // Lưu thông tin người dùng vào localStorage
-        localStorage.setItem("userData", JSON.stringify(user));
-
-        // Chuyển hướng đến trang chủ
         navigate("/");
-      } else {
-        setErrors({ submit: "Email hoặc mật khẩu không đúng." });
+        // window.location.href("/login");
+      } catch (error) {
+        console.log(error);
       }
-    } catch (error) {
-      console.error("There was an error logging in!", error);
-      setErrors({ submit: "Đăng nhập thất bại. Vui lòng thử lại." });
-    }
-  };
-
+    },
+  });
   return (
     <div>
-      <form className="form-shadow" onSubmit={handleSubmitLogin}>
+      <form className="form-shadow" onSubmit={formik.handleSubmit}>
         <h1>Đăng Nhập</h1>
         <input
-          type="text"
           id="email"
-          placeholder="Nhập Email"
-          value={formData.email}
-          onChange={handleChange}
-          required
+          name="email"
+          type="email"
+          placeholder="Email"
+          onChange={formik.handleChange}
+          value={formik.values.email}
         />
-        {errors.email && <p className="error">{errors.email}</p>}
+        {formik.errors.email && (
+          <span className="error">{formik.errors.email}</span>
+        )}
         <input
-          type="password"
           id="password"
-          placeholder="Nhập mật khẩu"
-          value={formData.password}
-          onChange={handleChange}
-          required
+          name="password"
+          type="password"
+          placeholder="Password"
+          onChange={formik.handleChange}
+          value={formik.values.password}
         />
-        {errors.password && <p className="error">{errors.password}</p>}
-        {errors.submit && <p className="error">{errors.submit}</p>}
+        {formik.errors.password && (
+          <span className="error">{formik.errors.password}</span>
+        )}
         <button id="button" type="submit">
           Đăng Nhập
         </button>

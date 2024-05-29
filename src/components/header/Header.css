@@ -101,3 +101,11 @@ header {
 .cart-icon {
   color: black;
 }
+.log-out-icon {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.log-out-icon:hover {
+  color: #fb2e86;
+}

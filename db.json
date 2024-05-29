@@ -681,16 +681,26 @@
   ],
   "users": [
     {
-      "id": "c458",
-      "username": "anh",
-      "email": "Leminhanh@gmail.com",
-      "password": "11111"
+      "email": "olivier@mail.com",
+      "password": "$2a$10$w2lzTKJ3OuLqtyloAEZvQ.LfImiRUYazmz8DKDwJsSFLfWUCyTKH6",
+      "firstname": "Olivier",
+      "lastname": "Monge",
+      "age": 32,
+      "id": 1
     },
     {
-      "id": "b108",
-      "username": "anhlm",
-      "email": "fff@gmail.com",
-      "password": "11111"
+      "email": "hhh@gmail.com",
+      "password": "$2a$10$GNhYgcpLhsXlvgAyB7f3du3z6Fh7R5ATpcS8ofY1vKCnoo2FVr.Pi",
+      "username": "Le Minh Anh",
+      "confirmPassword": "11111111",
+      "id": 2
+    },
+    {
+      "email": "thanhquang1810@gmail.com",
+      "password": "$2a$10$kPdprQcvB5k3OYxz.Sd69.zccms1HVigK6cAgk2uHKP.JlIMoNw0e",
+      "username": "Quang",
+      "confirmPassword": "11111111",
+      "id": 3
     }
   ]
 }

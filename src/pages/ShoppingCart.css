@@ -44,7 +44,9 @@ tbody td {
   background-color: #015306;
 }
 
-.quantity {font-weight: 700;
+
+.quantity {
+  font-weight: 700;
   margin: 0 10px;
   display: inline-block;
 }
@@ -67,6 +69,11 @@ tbody tr:nth-child(even) {
 
 .cart-total span {
   font-weight: bold;
+  color: #4caf50;
+}
+
+.buy-now-btn {
+  background-color: #ff5722;
   color: #4CAF50;
 }
 
@@ -84,6 +91,7 @@ tbody tr:nth-child(even) {
 .buy-now-btn:hover {
   background-color: #008cff;
 }
+
 .remove-btn{
   background-color: #fff200;
   color: white;
@@ -97,3 +105,6 @@ tbody tr:nth-child(even) {
 .remove-btn:hover {
   background-color: #ff0000;
 }
+
+
+

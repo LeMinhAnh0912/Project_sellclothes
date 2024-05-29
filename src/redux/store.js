@@ -11,8 +11,10 @@ export default configureStore({
     auth: authSlice,
     cart: cartSlice,
   },
+
   preloadedState,
   middleware: (getDefaultMiddleware) => {
     return getDefaultMiddleware().concat(saveToLocalStorage);
   },
+
 });

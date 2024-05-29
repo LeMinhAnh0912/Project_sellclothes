@@ -21,9 +21,25 @@ export default function ShoppingCart() {
           </tr>
         </thead>
         <tbody>
+
+          <tr>
+            <td>Product 1</td>
+            <td>Product Name</td>
+            <td>$100</td>
+            <td>
+              <button className="quantity-btn">-</button>
+              <span className="quantity">1</span>
+              <button className="quantity-btn">+</button>
+              <button className="remove-btn">Delete</button>
+            </td>
+            <td>$200</td>
+          </tr>
+          {/* Add more rows as needed */}
+
           {items.map((item) => (
             <CartItem key={item.id} item={item} />
           ))}{" "}
+
         </tbody>
       </table>
       <div className="cart-total">
