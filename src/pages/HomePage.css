@@ -139,12 +139,7 @@ h2 {
   margin-bottom: 20px;
   font-size: 20px;
 }
-#register {
-  padding: 20px;
-  margin: auto;
-  width: 50%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+
 .languages {
   padding: 15px;
   border-top: 1px solid black;

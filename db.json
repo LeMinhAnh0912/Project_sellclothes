@@ -678,5 +678,19 @@
       "image": "https://foxseventy.vn/wp-content/uploads/2021/04/quan-jean-nam-mau-xam.jpg",
       "description": "Quần jean nam, chất liệu jean cao cấp, thiết kế đơn giản, bền bỉ, thoải mái."
     }
+  ],
+  "users": [
+    {
+      "id": "c458",
+      "username": "anh",
+      "email": "Leminhanh@gmail.com",
+      "password": "11111"
+    },
+    {
+      "id": "b108",
+      "username": "anhlm",
+      "email": "fff@gmail.com",
+      "password": "11111"
+    }
   ]
 }

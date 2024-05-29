@@ -89,8 +89,14 @@ header {
   text-decoration: none;
   color: black;
 }
+.home:hover {
+  color: #fb2e86;
+}
 .user-icon {
   color: #000000;
+}
+.user-icon:hover {
+  color: #fb2e86;
 }
 .cart-icon {
   color: black;
