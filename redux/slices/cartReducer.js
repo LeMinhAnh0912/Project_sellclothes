@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  data: [],
+  items: [],
+  totalPrice: 0,
 };
 
 const cartSlice = createSlice({
@@ -9,11 +10,51 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addToCart: (state, action) => {
-      state.push(action.payload);
+      // console.log(state, "hoziontail");
+      const itemIndex = state.items.findIndex(
+        (item) => item.id === action.payload.id
+      );
+      if (itemIndex >= 0) {
+        state.items[itemIndex].quantity += 1;
+      } else {
+        state.items.push({ ...action.payload, quantity: 1 });
+      }
+      state.totalPrice += action.payload.price;
+    },
+    removeFromCart: (state, action) => {
+      const itemIndex = state.items.findIndex(
+        (item) => item.id === action.payload.id
+      );
+      if (itemIndex >= 0) {
+        state.totalPrice -=
+          state.items[itemIndex].price * state.items[itemIndex].quantity;
+        // delete a item from array
+        state.items.splice(itemIndex, 1);
+      }
+    },
+    adjustQuantity: (state, action) => {
+      console.log(state, "áda");
+      const itemIndex = state.items.findIndex(
+        (item) => item.id === action.payload.id
+      );
+      if (itemIndex >= 0) {
+        const item = state.items[itemIndex];
+        state.totalPrice -= item.price * item.quantity;
+        item.quantity = action.payload.quantity;
+        state.totalPrice += item.price * action.payload.quantity;
+        if (item.quantity <= 0) {
+          state.items.splice(itemIndex, 1);
+        }
+      }
+    },
+    clearCart: (state) => {
+      state.items = [];
+      state.totalPrice = 0;
+      state.totalQuantity = 0;
     },
   },
 });
 
-const { actions, reducer } = cartSlice;
-export const { addToCart } = actions;
-export default reducer;
+export const { addToCart, removeFromCart, adjustQuantity, clearCart } =
+  cartSlice.actions;
+export default cartSlice.reducer;

@@ -1,0 +1,36 @@
+.dashboard-container {
+font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+.link{
+    text-decoration: none;
+    color: blue ;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+.link:hover{
+    background-color: #d9d9d9;
+
+}
+.dashboard-links{
+    display: flex;
+    justify-content: space-around;
+}
+.dashboard-title{
+    display: flex;
+    justify-content: center;
+       font-size: 40px;
+}
+
+.dashboard-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+

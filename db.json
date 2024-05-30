@@ -677,17 +677,16 @@
       "price": 400000,
       "image": "https://foxseventy.vn/wp-content/uploads/2021/04/quan-jean-nam-mau-xam.jpg",
       "description": "Quần jean nam, chất liệu jean cao cấp, thiết kế đơn giản, bền bỉ, thoải mái."
+    },
+    {
+      "image": "",
+      "name": "",
+      "price": "",
+      "description": "",
+      "id": "OsbCeKo"
     }
   ],
   "users": [
-    {
-      "email": "olivier@mail.com",
-      "password": "$2a$10$w2lzTKJ3OuLqtyloAEZvQ.LfImiRUYazmz8DKDwJsSFLfWUCyTKH6",
-      "firstname": "Olivier",
-      "lastname": "Monge",
-      "age": 32,
-      "id": 1
-    },
     {
       "email": "hhh@gmail.com",
       "password": "$2a$10$GNhYgcpLhsXlvgAyB7f3du3z6Fh7R5ATpcS8ofY1vKCnoo2FVr.Pi",
@@ -715,6 +714,13 @@
       "username": "HCM_JV240304_ANHLM",
       "confirmPassword": "11111111",
       "id": 5
+    },
+    {
+      "email": "nguyentranthanhquang1810@gmail.com",
+      "password": "$2a$10$OXz2YY81sK9AKW.TtJXHYOkV1zl13qFgHgAJOfDzSI2Nr1YxYS4dG",
+      "username": "thanhquang12345",
+      "confirmPassword": "11111111",
+      "id": 6
     }
   ]
 }

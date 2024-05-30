@@ -1,0 +1,131 @@
+#productStatistics {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.searchProduct {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.searchProduct input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.searchProduct button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#addItem {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#addItem h3 {
+  color: #333;
+}
+
+#addItem input[type="text"],
+#addItem input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#addItem .btn button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  background-color: #008cba;
+  color: white;
+  padding: 8px 16px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #4caf50;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+table th:hover {
+  background-color: #ddd;
+}
+
+table img {
+  max-width: 100px;
+}
+
+.edit-btn {
+  background-color: #2196f3;
+}
+
+.delete-btn {
+  background-color: #f44336;
+}
+
+.edit-btn,
+.delete-btn {
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  opacity: 0.8;
+}

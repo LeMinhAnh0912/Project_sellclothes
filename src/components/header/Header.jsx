@@ -6,9 +6,10 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { logout } from "../../redux/slices/authReducer";
-
 export default function Header() {
+  const navigate = useNavigate();
   const isLogin = useSelector((state) => state.auth.isLogin);
   const dispatch = useDispatch();
 
@@ -18,7 +19,12 @@ export default function Header() {
     // Dispatch action logout
     dispatch(logout());
   };
-
+  const handleInformation = () => {
+    localStorage.removeItem("USER");
+    localStorage.removeItem("TOKEN");
+    // Dispatch action logout
+    navigate("/information");
+  };
   const cartItems = useSelector((state) => state.cart.items);
   const totalQuantity = cartItems.reduce((acc, currentValue) => {
     return acc + currentValue.quantity;
@@ -61,10 +67,12 @@ export default function Header() {
           </div>
           {/* Nếu đã đăng nhập, hiển thị icon Logout */}
           {isLogin && (
-            <div className="log-out-icon" onClick={handleSignout}>
-              <LogoutIcon />
-              <span>{localStorage.getItem("USER")}</span>
-            </div>
+            <>
+              <div className="log-out-icon" onClick={handleSignout}>
+                <LogoutIcon />
+                <span>{localStorage.getItem("USER")}</span>
+              </div>
+            </>
           )}
           {/* Nếu chưa đăng nhập, hiển thị icon User */}
           {!isLogin && (

@@ -9,10 +9,12 @@ import Detail from "../detail/Detail";
 import ShoppingCart from "../../pages/ShoppingCart";
 import AboutUs from "../../pages/AboutUs";
 import SignOut from "../signout/SignOut";
+import Dashboard from "../../admin/DashBoard/DashBoard";
 
 export default function Index() {
   return (
     <Routes>
+      <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/detail/:id" element={<Detail />} />
       <Route path="/search" element={<SearchProduct />} />
       <Route path="/contact" element={<AboutUs />} />
