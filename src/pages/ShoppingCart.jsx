@@ -1,12 +1,34 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
 import "./ShoppingCart.css";
-import { useSelector } from "react-redux";
 import CartItem from "./CartItem";
-
+import { useNavigate } from "react-router-dom";
+import { clearCart } from "../../redux/slices/cartReducer";
 export default function ShoppingCart() {
   const items = useSelector((state) => state.cart.items);
   const totalPrice = useSelector((state) => state.cart.totalPrice);
+  const totalQuantity = useSelector((state) => state.cart.totalQuantity);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
+  // Handle payment
+  const handlePayment = () => {
+    let payment = JSON.parse(localStorage.getItem("cart")) || [];
+    let data = {
+      items: items,
+      totalPrice: totalPrice,
+      totalQuantity: totalQuantity,
+    };
+    payment.push(data);
+    localStorage.setItem("cart", JSON.stringify(payment));
+    alert("Thanh toán thành công");
+
+    // Clear the cart in the Redux store
+    dispatch(clearCart());
+
+    // Navigate to home page
+    navigate("/");
+  };
   return (
     <div className="shopping-cart">
       <h1>Shopping Cart</h1>
@@ -21,32 +43,19 @@ export default function ShoppingCart() {
           </tr>
         </thead>
         <tbody>
-
-          <tr>
-            <td>Product 1</td>
-            <td>Product Name</td>
-            <td>$100</td>
-            <td>
-              <button className="quantity-btn">-</button>
-              <span className="quantity">1</span>
-              <button className="quantity-btn">+</button>
-              <button className="remove-btn">Delete</button>
-            </td>
-            <td>$200</td>
-          </tr>
           {/* Add more rows as needed */}
-
           {items.map((item) => (
             <CartItem key={item.id} item={item} />
           ))}{" "}
-
         </tbody>
       </table>
       <div className="cart-total">
         <h3>
           TOTAL: <span>{totalPrice}</span>
         </h3>
-        <button className="buy-now-btn">BUY NOW !!!!</button>
+        <button onClick={handlePayment} className="buy-now-btn">
+          BUY NOW !!!!
+        </button>
       </div>
     </div>
   );
