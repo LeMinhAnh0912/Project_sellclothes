@@ -721,6 +721,20 @@
       "username": "thanhquang12345",
       "confirmPassword": "11111111",
       "id": 6
+    },
+    {
+      "email": "quangloveminhanh@gmail.com",
+      "password": "$2a$10$rXEYl5AOhqyhZ4cqb6Vt.Oj.acJgdUsgFxC6FDpstOm9oeo.Tk0li",
+      "username": "sadasdas",
+      "confirmPassword": "11111111",
+      "id": 7
+    },
+    {
+      "email": "quang1810@gmail.com",
+      "password": "$2a$10$F.i8Qb1q1m4DnorhxvDFme/HTSWyaS7jjogM3e3USNVf9eLAQplGm",
+      "username": "quang",
+      "confirmPassword": "11111111",
+      "id": 8
     }
   ]
 }

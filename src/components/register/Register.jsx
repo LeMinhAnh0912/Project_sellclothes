@@ -7,32 +7,24 @@ import authApi from "../../api/authApi";
 export default function Register() {
   const [errors, setErrors] = useState("");
   const navigate = useNavigate();
-
   const validate = (values) => {
     const errors = {};
-
-    if (!values.username) {
+    // Check email khong rong
+    if (!values.email) {
+      errors.email = "email! khong duoc de trong";
+    } else if (
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email) // check dinh dang email
+    ) {
+      errors.email = "vui long nhap dung dinh dang email";
+    } else if (!values.password) {
+      errors.password = "password khong duoc de trong";
+    } else if (values.password.length < 8) {
+      errors.password = "Yeu cau nhap password lon hon 8 ky tu!";
+    } else if (!(values.password === values.confirmPassword)) {
+      errors.confirmPassword = "vui long nhap dung password";
+    } else if (!values.username) {
       errors.username = "Tên tài khoản là bắt buộc.";
     }
-
-    if (!values.email) {
-      errors.email = "Email là bắt buộc.";
-    } else if (
-      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
-    ) {
-      errors.email = "Vui lòng nhập đúng định dạng email.";
-    }
-
-    if (!values.password) {
-      errors.password = "Mật khẩu là bắt buộc.";
-    } else if (values.password.length < 8) {
-      errors.password = "Yêu cầu nhập mật khẩu lớn hơn 8 ký tự.";
-    }
-
-    if (values.password !== values.confirmPassword) {
-      errors.confirmPassword = "Mật khẩu và xác nhận mật khẩu không khớp.";
-    }
-
     return errors;
   };
 

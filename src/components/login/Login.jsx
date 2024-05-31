@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Login.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { login } from "../../redux/slices/authReducer";
 import authApi from "../../api/authApi";
 
 export default function Login() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const isLogged = useSelector((state) => state.auth.isLogged);
+  const [displayErros, setDisplayErros] = useState("");
 
+  // Khong cho user vao lai trang login khi da dang nhap
+  useEffect(() => {
+    if (isLogged) {
+      navigate("/");
+    }
+  }, []);
   const validate = (values) => {
     // Tao object errors
     const errors = {};
@@ -90,7 +98,7 @@ export default function Login() {
         <button id="button" type="submit">
           Đăng Nhập
         </button>
-
+        <p>{displayErros}</p>
         <div>
           <Link to="/register">Tạo tài khoản ngay!!!!</Link>
         </div>
